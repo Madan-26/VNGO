@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    
+</head>
+<center>
+    <h1>Volunteer Registration Form</h1>
+
+<body>
+   
+    
+    <form method="POST" action="process_form.php" onsubmit="return validateForm()">
+       
+       
+    </form>
+    <form method="POST" action="process_form.php">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required><br><br>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required><br><br>
+        
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required><br><br>
+
+        
+        
+        <label for="field_of_interest">Field of Interest:</label>
+        <input type="text" name="field" id="field" required><br><br>
+        
+        <label for="skills">Skills:</label>
+        <input type="text" name="skill" id="skill" required><br><br>
+        
+        <style>
+            .gender-container {
+              display: flex;
+              flex-direction: row;
+            }
+          
+            .gender-container label {
+              margin-left: 10px;
+            }
+          </style>
+          
+          <center><label for="gender">Gender:</label>
+          <div class="gender-container">
+            <input type="radio" name="gender" id="gender_male" value="male" required>
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender" id="gender_female" value="female">
+            <label for="gender_female">Female</label>
+            <input type="radio" name="gender" id="gender_other" value="other">
+            <label for="gender_other">Other</label>
+          </div></center><br><br>
+        
+        
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" name="phone" id="phonee" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <input type="submit" value="Submit" class="submit-button">
+        
+    </form>
+   </body>
+</html>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("first_name").value;
+            var lastName = document.getElementById("last_name").value;
+            var location = document.getElementById("location").value;
+            var field = document.getElementById("field").value;
+            var skill = document.getElementById("skill").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+
+           
+            
+           
+            if (firstname.trim() === "" ||
+                lastname.trim() === "" ||
+                phone.trim() === "" ||
+                
+                field.trim() === "" ||
+                skill.trim() === "" ||
+                location.trim() === "" ||
+                
+                email.trim() === "") 
+                {
+                alert("Please fill in all fields");
+                return false;
+            }
+
+           
+
+            return true;
+        }
+    </script>
+
+
