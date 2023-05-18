@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Shelter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            /* padding: 40px;
+            text-align: center; */
+            background-color: #f2f2f2;
+            background-image: linear-gradient(135deg, #efacf0 30%, #d7e785 100%);
+            background-repeat: no-repeat;
+            border: 3px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            /* margin: 5 auto;
+            padding: 20px; */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Shelter</h1>
+    <form action="insertshelter.php" method="POST">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" required>
+        <br>
+        <label for="availability">Availability:</label>
+        <input type="number" name="availability" id="availability" required>
+        <br>
+        <input type="submit" value="Add Shelter">
+    </form>
+
+    <br>
+    <br>
+    <h1><i>OR</i></h1>
+    <br>
+    <h3> <a href="shelterlist.php"> Click here to search shelter availability in your area</a></h3>
+</body>
+</html>
