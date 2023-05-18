@@ -18,6 +18,7 @@
         /* padding: %; */
         background-color: rgb(239, 228, 122);
         background-image: linear-gradient(135deg, #efacf0 30%, #d7e785 100%);
+        /* background-image: url(images/LogoGreen.jpeg); */
       }
       .logo {
         width: 50px;
@@ -32,7 +33,7 @@
       
       .logo img {
         height: 50px;
-        width: 60px;
+        width: 100px;
       }
       table{
       width: 97%;
@@ -146,12 +147,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.aboutus{
+  flex-shrink: 0;
+      padding: 10px;
+      background-color: #333;
+      color: #000000;
+      text-align: left;
+      margin: 2%;
+      border: 3px solid black;
+      /* border: 10px solid #FAB2FF; */
+      /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+      background-image: linear-gradient(135deg, #FAB2FF 10%, #4635e8 100%);
+}
+.aboutus:hover{
+  background-image: linear-gradient(135deg, #dd92e2 10%, #7b6fec 100%);
+
+}
+
+
 </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.jpeg" alt="Volunteer matching logo">
+            <img src="images/LogoGreenNOBG.png" alt="Volunteer matching logo">
         </div>
         <!-- <div class="header-links"> -->
             <!-- <a href="http://localhost/FC58/searchOppo.php"> search oppurtunities </a> -->
@@ -194,33 +213,39 @@
       
       </div>
 
-      <div>
-        <div>
-          Title: About Us
+      <div class="aboutus">
+        <div  class="aboutustext" style="font-size: 20px;" >
+          <Strong> About Us : </Strong>
         </div>
-
-        <div>
-          Introduction: <br>
+<br>
+        <div class="aboutustext" style="font-size: 20px;">
+          <!-- <strong>Introduction:</strong> <br> -->
           Welcome to our Volunteer Matchmaking platform! We are a team of Innovative Software Enthusiasts dedicated to connecting volunteers with organizations in need. Our mission is to make a positive impact on communities by facilitating meaningful volunteer opportunities. Whether you are an individual looking to give back or an NGO organization seeking passionate volunteers, our platform provides a user-friendly interface to match your needs.
         </div>
-        <div>
-          Key Points to Include: <br>
 
-          Our Vision: Share your vision for the platform and the impact you aim to create. <br>
-          Our Mission: Explain your mission to connect volunteers with organizations and the purpose behind it. <br>
-          Our Team: Introduce your team members and their roles. Highlight their expertise and passion for volunteering. <br>
-          Our Platform: Describe the features and functionality of your Volunteer Matchmaking platform. Emphasize its user-friendly nature and how it simplifies the volunteer matching process. <br>
-          Volunteer Opportunities: Highlight the variety of volunteer opportunities available on your platform, ranging from local community initiatives to global causes. <br>
-          NGO Organizations: Explain how NGO organizations can benefit from your platform by finding dedicated volunteers to support their causes. <br>
-          Community Impact: Share success stories and examples of the positive impact created through volunteer contributions. <br>
-          Get Involved: Encourage visitors to join your platform and become part of the volunteer community. Provide clear instructions on how to sign up and get started. <br>
-        </div>
-          Conclusion: <br>
+        <br>
+        <div class="aboutustext" style="font-size: 20px;">
+          <strong> Key Points :</strong><br>
+          <ul>
+          <li>  Our Vision: We envision a world where volunteers and organizations come together to create positive change and foster thriving communities. <br> </li>
+          <li>Our Mission: Our mission is to connect passionate volunteers with organizations in need, empowering them to make a meaningful impact through seamless volunteer matching. <br> </li>
+          <li>Our Team: Meet our dedicated team of software enthusiasts who are passionate about leveraging technology for social good and connecting volunteers with impactful opportunities. <br> </li>
+          <li>Our Platform: Our user-friendly platform simplifies the volunteer matching process, making it easy for individuals and organizations to find the perfect fit for their skills and interests. <br> </li>
+          <li>Volunteer Opportunities: Explore a diverse range of volunteer opportunities, from local community projects to global initiatives, providing you with options to make a difference in areas that matter to you. <br> </li>
+          <li>NGO Organizations: Partner with us to find dedicated volunteers who share your organization's values and support your cause, helping you achieve your mission more effectively. <br></li>
+          <li>Community Impact: Hear inspiring success stories and witness the positive impact created through the collective efforts of our volunteers and organizations. <br></li>
+          <li>Get Involved: Join our platform today and become part of a passionate volunteer community. Sign up easily and start making a difference in the lives of others. <br></li>
+        </ul>
+          <br>
+          <strong> Conclusion:</strong> <br>
           At Volunteer Matchmaking, we believe in the power of volunteering to create positive change. Join us in making a difference!     
+        </div>  
 </div>
 
+
+
     <footer >
-        <p>Created by FC58 : ISE Innovative Software Enthusiasts</p>
+        <p style="font-size: large;">Created by FC58 : ISE Innovative Software Enthusiasts</p>
     <!-- <table>
       <tr>
         <th>
