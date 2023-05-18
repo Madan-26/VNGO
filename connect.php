@@ -1,6 +1,6 @@
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $firstName = $_POST["firstname"];
     $lastName = $_POST["lastname"];
