@@ -6,19 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-    .logo{
-
+        *{
+      box-sizing: border-box;
+      
+    } 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      padding: 10;
+      margin: 2%;
+      border: solid black;
+      background-color: rgb(148, 237, 237);
     }
+
+    .header-links {
+      display: flex;
+      flex: 30%;
+      color: rgb(0, 255, 255);
+    }
+
+    body{
+        width: 100%;
+      /* border: solid black; */
+      margin: 15px;
+      /* padding: %; */
+      /* background-color: rgb(64, 226, 226); */
+    }
+
+    .logo{
+        width: 50px;
+      height: 50px;
+      flex: 0 0 auto;
+      overflow: hidden;
+      height: 50px;
+      width: 70px;
+      padding-right: 33%;
+    }
+
+    .logo img {
+      height: 50px;
+      width: 60px;
+      /* float: left; */
+    }
+
+    .donate-button, .login-button, .signup-button {
+        /* padding: 10%; */
+        margin-left: 10px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        flex: 15%;
+    }
+
+    .donate-button:hover,
+    .login-button:hover,
+    .signup-button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      flex-shrink: 0;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      margin: 2%;
+    }
+
+    table{
+        width: 97%;
+    }
+    
+
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="Volunteer matching logo">
+            <img src="images/logo.jpeg" alt="Volunteer matching logo">
         </div>
-        <div>
+        <div class="header-links">
+            <select>
+                <option value="" disabled>by Volunteer </option>
+                <option value="" >search oppurtunities</option>
+                <!-- <option value=""></option> -->
+                <!-- <option value=""></option> -->
+            </select>
             
         </div>
+        <div class="header-links">
+            <select>
+                <option value="" disabled>by NGOs</option>
+                <option value="">search talents</option>
+                <!-- <option value=""></option> -->
+                <!-- <option value=""></option> -->
+            </select>   
+        </div>
+    <button class="donate-button" onclick="location.href='https://pages.razorpay.com/pl_LqHFmKZ3hNXSk3/view'">Donate</button>
+    <button class="login-button" onclick="location.href=''">Login</button>
+    <button class="signup-button" onclick="location.href='' ">Sign Up</button>
     </header>
+
+    
+
+
+    <footer >
+        <p>Created by FC58 : ISE Innovative Software Enthusiasts</p>
+    </footer>
 </body>
 </html>
