@@ -22,6 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($statement->execute()) {
         echo "Shelter added successfully!";
+        header("Location: shelterlist.php");
+        exit();
     } else {
         echo "Error adding shelter: " . $conn->error;
     }

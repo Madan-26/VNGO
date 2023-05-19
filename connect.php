@@ -23,6 +23,8 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
             echo "Registration failed: " . $stmt->error;
         } else {
             echo "Registration successful!";
+            header("Location: login.html");
+            exit();
         }
 
        
