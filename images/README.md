@@ -24,24 +24,27 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository**:
 
 2. **Environment Setup**:
-- Create a virtual environment (optional but recommended).
-- Install dependencies: `pip install -r requirements.txt` (for Python) or `npm install` (for JavaScript).
+   - Ensure you have PHP installed on your system.
+   - Create a virtual environment (optional but recommended).
+   - Install any necessary PHP dependencies (if applicable).
+   - Install web server software (e.g., Apache, Nginx) and configure it to serve PHP files.
 
 3. **Database Setup**:
-- Create a database and configure the connection settings.
-- Run migrations: `python manage.py migrate` (for Python) or setup your database for JavaScript.
+   - Install and set up MariaDB or MySQL on your server.
+   - Create a database for the project.
+   - Configure the connection settings in your PHP code (usually in a configuration file).
 
 4. **Configuration**:
-- Create a `.env` file and configure environment variables (e.g., API keys, database settings).
+   - Create a `.env` file for storing environment variables.
+   - Configure environment variables, including database connection details and any API keys required.
 
 5. **Run the Application**:
-- Start the development server: `python manage.py runserver` (for Python) or your preferred method for JavaScript.
+   - Start your PHP development server or configure your web server to serve the PHP files.
 
 6. **Access the Application**:
-- Open your web browser and navigate to `http://localhost:8000` (or your specified port).
+   - Open your web browser and navigate to the appropriate URL, typically `http://localhost:8000` (or your specified port).
 
-## Usage
-[Include usage instructions here. How to use the platform as an NGO, volunteer, or administrator.]
+
 
 ## Contributing
 We welcome contributions from the community. If you'd like to contribute to the project, please follow these steps:
@@ -51,15 +54,9 @@ We welcome contributions from the community. If you'd like to contribute to the 
 3. Commit your changes and push to your forked repository.
 4. Create a pull request with a detailed description of your changes.
 
-## License
-This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Contact
-If you have any questions or suggestions, please feel free to contact us at [your-email@example.com].
-
----
-
-**Note**: This README is a template. Make sure to replace the placeholders with your actual project information.
+If you have any questions or suggestions, please feel free to contact us at [madandvg1@gmail.com].
 
 ###IMAGES/SNAPSHOTS:
 
